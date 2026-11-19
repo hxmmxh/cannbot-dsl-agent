@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+build/
+*.pyc
+
+# 插件安装器生成的配置、依赖、运行环境和任务记录
+/.cannbot/
+/.codex/
+/.agents/skills/ops-direct-invoke*
+/.venv-installer/
+/exports/
+.env
+.env.local
+
+# 额外参考仓库不属于三个受管理的上游依赖
+/third_party/ops-transformer/

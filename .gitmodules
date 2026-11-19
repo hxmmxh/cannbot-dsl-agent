@@ -1,0 +1,9 @@
+[submodule "third_party/cannbot"]
+	path = third_party/cannbot
+	url = https://gitcode.com/cann/cannbot.git
+[submodule "third_party/cannbot-skills"]
+	path = third_party/cannbot-skills
+	url = https://gitcode.com/cann/cannbot-skills.git
+[submodule "third_party/cannbot-dsl"]
+	path = third_party/cannbot-dsl
+	url = https://gitcode.com/cann/cannbot-dsl.git

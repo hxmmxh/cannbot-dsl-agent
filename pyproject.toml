@@ -1,0 +1,30 @@
+[project]
+name = "cannbot-workspace"
+version = "0.1.0"
+description = "Local Ascend CANNBot DSL development environment"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "cannbot-dsl==0.8.2",
+    "numpy==2.4.4",
+    "pyyaml==6.0.3",
+    "torch==2.10.0+cpu",
+    "torch-npu==2.10.0.post7",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux' and platform_machine == 'aarch64'"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[dependency-groups]
+dev = [
+    "pytest==9.2.0",
+]
